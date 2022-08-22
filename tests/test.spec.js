@@ -64,7 +64,7 @@ test('second test', async ({ page }) => {
 test('third test', async ({ page }) => {
   //Перейти на страницу
   await page.goto('http://89.189.152.235:1337/?path=/story/eos-twincolumn--default')
-    const frame = page.frameLocator('#storybook-preview-iframe')
+  const frame = page.frameLocator('#storybook-preview-iframe')
   
   //Нажать на элемент "{4} Заголовок" ==>  "{4} Заголовок" содержит "eos-checkbox-wrapper-checked"
   await frame.locator('text={4} Заголовок').click()
